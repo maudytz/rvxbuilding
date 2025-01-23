@@ -1,4 +1,4 @@
-enable-magisk-update = false # set this to false if you do not want to receive updates for the module in magisk app
+enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 1
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
@@ -6,11 +6,9 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
-[Youtub]
+[Youtube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "inotia00 ReVanced"
-included-patches = "'Change header'"
-patcher-args = "-Oheader=Cooler "
-
+rv-brand = "extended"
